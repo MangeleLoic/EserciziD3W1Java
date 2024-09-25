@@ -34,10 +34,6 @@ public class Main {
         Cliente cliente3 = new Cliente(999,"Franco Neri", "Franconeri@epicode.it", "24 Marzo 2022" );
         System.out.println("codice cliente: " + cliente3.getCodiceCliente() + ", nome e cognome: " + cliente3.getDatiCliente() + ", email: " + ", iscritto in data: " + cliente3.getDataIscrizione());
 
-        Carrello carrello1 = new Carrello(cliente1, new ArrayList<>(), 0.0);
-        carrello1.aggiungiArticolo(articolo2);
-        carrello1.aggiungiArticolo(articolo1);
-        System.out.println("Il costo totale del carrello è: " + carrello1.getCosto());
 
 
 
