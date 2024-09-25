@@ -34,6 +34,17 @@ public class Main {
         Cliente cliente3 = new Cliente(999,"Franco Neri", "Franconeri@epicode.it", "24 Marzo 2022" );
         System.out.println("codice cliente: " + cliente3.getCodiceCliente() + ", nome e cognome: " + cliente3.getDatiCliente() + ", email: " + ", iscritto in data: " + cliente3.getDataIscrizione());
 
+        Carrello carrello1 = new Carrello(cliente1);
+        carrello1.aggiungiArticolo(articolo1);
+        carrello1.aggiungiArticolo(articolo2);
+        carrello1.stampaCarrello();
+
+        Carrello carrello2 = new Carrello(cliente2);
+        carrello2.aggiungiArticolo(articolo2);
+        carrello2.aggiungiArticolo(articolo2);
+        carrello2.aggiungiArticolo(articolo3);
+        carrello2.stampaCarrello();
+
 
 
 
@@ -46,5 +57,6 @@ public static void sum(Rettangolo r1,Rettangolo r2) {
     System.out.println("la somma dei perimetri è: " + sPerimetro);
     System.out.println("la somma delle aree è: " + sArea);
 }
+
 
     }
