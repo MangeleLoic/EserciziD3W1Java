@@ -2,7 +2,7 @@ public class Carrello {
     private Cliente clienteAssociato;
     private Articolo[] elencoArticoli;
     private double costo;
-    private int articoliAggiunti; // Tiene traccia del numero di articoli nel carrello
+    private int articoliAggiunti;
 
 
     public Carrello(Cliente clienteAssociato) {
